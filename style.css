@@ -1639,7 +1639,6 @@ footer {
     color: #1a1a1a; /* 改为和 Hi there! 一样的颜色 */
     opacity: 1; /* 增加不透明度 */
     writing-mode: vertical-lr;
-    transform: rotate(180deg);
 }
 
 .skills-gallery {
