@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicy GUO - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=ZCOOL+KuaiLe&family=Noto+Serif+SC:wght@300;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./language.js"></script>
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="./static/Me1.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
+        </video>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="./index.html"><span class="en">Home</span><span class="zh">首页</span></a></li>
+            <li><a href="./information.html"><span class="en">Personal Info</span><span class="zh">个人信息</span></a></li>
+            <li><a href="./project.html"><span class="en">Projects</span><span class="zh">项目成果</span></a></li>
+            <li><a href="./experience.html"><span class="en">Experience</span><span class="zh">个人经历</span></a></li>
+            <li><a href="./contact.html"><span class="en">Contact Me</span><span class="zh">联系我</span></a></li>
+        </ul>
+        <!-- 移至 nav 内部 -->
+        <div class="lang-switch">
+            <span class="lang-btn" data-lang="en">EN</span>
+            <div class="lang-divider"></div>
+            <span class="lang-btn" data-lang="zh">中文</span>
+        </div>
+    </nav>
+
+    <main id="scroll-container">
+        <div class="hero-area">
+            <!-- 第一页：姓名与座右铭 -->
+            <section class="content section-1">
+                <div class="name-container fade-in">
+                    <h1 class="english-name">Cicy GUO</h1>
+                    <h2 class="chinese-name">郭琪</h2>
+                </div>
+
+                <div class="motto-container fade-in" style="animation-delay: 0.5s;">
+                    <p class="motto-de">Die Luft der Freiheit weht</p>
+                    <p class="motto-zh">自由之风永远吹拂</p>
+                </div>
+
+                <div class="scroll-indicator">SCROLL DOWN</div>
+            </section>
+
+            <!-- 第二页：个人基础信息 -->
+            <section class="content section-2">
+                <div class="info-container">
+                    <div class="info-item show">
+                        <p class="info-label"><span class="en">Name</span><span class="zh">姓名</span></p>
+                        <p class="info-value"><span class="en">Qi Guo</span><span class="zh">郭琪</span></p>
+                    </div>
+                    
+                    <div class="info-item show">
+                        <p class="info-label"><span class="en">Birthday</span><span class="zh">出生年月</span></p>
+                        <p class="info-value">04/2005</p>
+                    </div>
+
+                    <div class="info-item show">
+                        <p class="info-label"><span class="en">Gender</span><span class="zh">性别</span></p>
+                        <p class="info-value"><span class="en">Female</span><span class="zh">女</span></p>
+                    </div>
+
+                    <div class="info-item show">
+                        <p class="info-label"><span class="en">Education</span><span class="zh">教育背景</span></p>
+                        <p class="info-value"><span class="en">Xi'an Jiaotong-Liverpool University</span><span class="zh">西交利物浦大学</span></p>
+                        <p style="font-size: 1.2rem; opacity: 0.8; margin-top: 0.5rem;">
+                            <span class="en">Junior / Computer Science and Technology</span>
+                            <span class="zh">大三 / 计算机科学与技术</span>
+                        </p>
+                    </div>
+                    
+                    <div class="info-item show">
+                        <p class="info-label"><span class="en">Research Interests</span><span class="zh">研究方向</span></p>
+                        <div class="info-value">
+                            <span class="highlight-text"><span class="en">HCI</span><span class="zh">HCI (人机交互)</span></span> <span style="font-size: 1.5rem;">/</span> 
+                            <span class="highlight-text"><span class="en">Visualization</span><span class="zh">可视化</span></span> <span style="font-size: 1.5rem;">/</span> 
+                            <span class="highlight-text"><span class="en">DESIGN</span><span class="zh">设计</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator"><span class="en">SCROLL DOWN</span><span class="zh">向下滚动</span></div>
+            </section>
+        </div>
+
+        <!-- 新增：Self Introduction 板块 (灰白背景) -->
+        <section class="content section-intro">
+            <div class="intro-bottom">
+                <div class="photo-side">
+                    <img src="./static/my_photo.jpg" alt="Qi Guo" class="intro-photo">
+                </div>
+                <div class="intro-text-side">
+                    <h1 class="hi-there">Hi there!</h1>
+                    <div class="intro-content">
+                        <p class="en">I am a Junior student majoring in Computer Science and Technology at Xi'an Jiaotong-Liverpool University. My journey is fueled by a passion for blending technology with human-centric design.</p>
+                        <p class="zh">我是西交利物浦大学计算机科学与技术专业的大三学生。我的学术旅程由将技术与以人为本的设计相结合的热情所驱动。</p>
+                        <p class="en">With great passion and ability in Human-Computer Interaction, Visualization, and Design, I strive to create meaningful digital experiences that are both aesthetically pleasing and technically robust. I believe in the power of visual storytelling and data physicalization to bridge the gap between complex information and human emotion.</p>
+                        <p class="zh">我在人机交互、可视化和设计领域拥有浓厚的热情和专业能力，致力于打造富有意义的数字体验，这些体验既具有美学吸引力，又具备强大的技术支撑。我坚信视觉叙事和可视化的力量，它们能够架起复杂信息与人类情感之间的桥梁。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三页：正式进入灰白背景页 -->
+        <section class="content section-3">
+            <div class="controls">
+                <!-- <button class="control-btn" onclick="toggleAnimation()">⏸️ Pause</button>
+                <button class="control-btn" onclick="resetPosition()">🔄 Reset</button>
+                <button class="control-btn" onclick="changeDirection()">
+                  ↔️ Direction
+                </button> -->
+              </div>
+            
+              <div class="speed-indicator">
+                <span class="en">Speed:</span><span class="zh">速度:</span> <span id="speedValue">120</span> px/s
+              </div>
+            
+              <div class="card-container">
+                <canvas id="particleCanvas"></canvas>
+                <canvas id="scannerCanvas"></canvas>
+            
+                <div class="scanner"></div>
+            
+                <div class="card-stream" id="cardStream">
+                  <div class="card-line" id="cardLine"></div>
+                </div>
+              </div>
+            
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+              <script src="./script.js"></script>
+
+            <div class="info-container">
+                <div class="info-item show">
+                    <p class="info-label"><span class="en">Project 01</span><span class="zh">项目 01</span></p>
+                    <h1 class="english-name" style="color: #333; font-size: 3rem;">
+                        <span class="en">iGEM Competition</span>
+                        <span class="zh">iGEM (国际基因工程机器大赛)</span>
+                    </h1>
+                    <p style="font-size: 1.2rem; color: #666; margin-top: 1rem;">
+                        <span class="en">Competing in the 2025 iGEM, I led the frontend architecture for our official Wiki and the SPADE database. We integrated complex bio-data to secure a Silver Medal and Best Software & AI Nomination, capping off this journey by presenting our project to 430 teams at the Paris Grand Jamboree.</span>
+                        <span class="zh">在2025年iGEM中，我主导了官方Wiki和SPADE (抗菌肽数据库) 的前端架构开发。我们整合了复杂的生物数据，最终获得了银奖以及最佳软件与人工智能奖项提名。在巴黎世界总决赛上，我向全球430支队伍展示了我们的成果。</span>
+                    </p>
+                    <div class="btn-group">
+                        <a href="https://2025.igem.wiki/xjtlu-software/" target="_blank" class="view-project-btn"><span class="en">View Wiki</span><span class="zh">查看 Wiki</span></a>
+                        <a href="https://xjtlu-spade.netlify.app/" target="_blank" class="view-project-btn"><span class="en">View Spade</span><span class="zh">查看 Spade</span></a>
+                        <a href="./igem.html" class="view-project-btn"><span class="en">View Project</span><span class="zh">查看项目</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四页 project2：Physicalization in Practice -->
+        <section class="content section-4">
+            <div class="text-side">
+                <div class="info-container">
+                    <div class="info-item show">
+                        <p class="info-label"><span class="en">Project 02</span><span class="zh">项目 02</span></p>
+                        <h1 class="english-name" style="color: #333; font-size: 3rem;">
+                            <span class="en">Physicalization in Practice</span>
+                            <span class="zh">物理可视化实践</span>
+                        </h1>
+                        <h2 style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; color: #666; margin-top: 0.5rem;">
+                            <span class="en">The Embodiment of Emotions</span>
+                            <span class="zh">情感的具身化</span>
+                        </h2>
+                        <p style="font-size: 1.2rem; color: #666; margin-top: 1.5rem; line-height: 1.6;">
+                            <span class="en">This project explores the transformation of intangible human emotions into tangible physical forms. By utilizing natural materials and interactive design, we created an embodiment of feelings that can be seen, heard, and touched, winning the "Student Nominated Winner" and "Excellent Poster" at XJTLU SURF 2025. Currently, the project is continuously being improved and refined, and plans are in place to expand the research scope.</span>
+                            <span class="zh">该项目探讨了如何将无形的人类情感转化为有形的物理形式。通过利用自然材料和交互设计，我们创造了一个可以被看见、听到和触摸的情感载体——风铃，并获得了西交利物浦大学 SURF (夏季本科生研究项目) 2025年度“学生提名奖”和“优秀海报奖”。目前，该项目正在持续改进和优化中，并计划扩大研究范围。</span>
+                        </p>
+                        <div class="btn-group" style="justify-content: flex-start;">
+                            <a href="./physicalization.html" class="view-project-btn"><span class="en">View Project</span><span class="zh">查看项目</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-side">
+                <div class="card-3d-container" id="card3D">
+                    <div class="card-3d">
+                        <img src="./static/physicalization.jpg" alt="Physicalization in Practice">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五页 project3：AI-Assisted Visual Analytics -->
+        <section class="content section-5">
+            <div class="paper-gallery" id="paperGallery">
+                <div class="paper-card">
+                    <img src="./static/paper1.png" alt="Research Paper 1">
+                </div>
+                <div class="paper-card">
+                    <img src="./static/paper2.png" alt="Research Paper 2">
+                </div>
+            </div>
+
+            <div class="info-container">
+                <div class="info-item show">
+                    <p class="info-label"><span class="en">Project 03</span><span class="zh">项目 03</span></p>
+                    <h1 class="english-name" style="color: #333; font-size: 3rem;">
+                        <span class="en">AI-Assisted Visual Analytics</span>
+                        <span class="zh">AI 辅助视觉分析</span>
+                    </h1>
+                    <p style="font-size: 1.2rem; color: #666; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        <span class="en">This research focuses on leveraging Large Language Models (LLMs) to extract and analyze multimodal data from dynamic video stimuli. Presented at IEEE VIS 2025, the project introduces a novel workflow for automated insight generation in complex visual environments.</span>
+                        <span class="zh">本研究致力于利用大型语言模型（LLMs）从动态视频刺激中提取和分析多模态数据。该项目在 2025 年 IEEE 可视化会议（IEEE VIS 2025）上展示，提出了一种用于在复杂视觉环境中自动生成洞察的新颖工作流程。</span>
+                    </p>
+                    <div class="btn-group" style="justify-content: center;">
+                        <a href="https://www.researchgate.net/publication/396522519_Early_Exploration_into_AI-Assisted_Visual_Analytics_for_Dynamic_Videos?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjoiaG9tZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" target="_blank" class="view-project-btn"><span class="en">View Publication</span><span class="zh">查看论文</span></a>
+                        <a href="./dynamic_video.html" class="view-project-btn"><span class="en">View Project</span><span class="zh">查看项目</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第六页：Skills Gallery (只保留技能) -->
+        <section class="content section-6">
+            <div class="skills-top">
+                <div class="text-side">
+                    <h1 class="section-title-large"><span class="en">Skills</span><span class="zh">技能</span></h1>
+                </div>
+                <div class="skills-gallery">
+                    <!-- Card 1: Coding (Dark Front) -->
+                    <div class="skill-card dark-front">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <h3><span class="en">Coding</span><span class="zh">编程</span></h3>
+                                <p>Java, Python, HTML/CSS, JavaScript, MySQL</p>
+                            </div>
+                            <div class="skill-card-back">
+                                <div class="card-placeholder"><span class="en">Coding</span><span class="zh">编程</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2: Blender (Light Front) -->
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="./static/blender.jpg" alt="Blender Modeling" class="skill-card-img">
+                                <h3 class="card-overlay-title"><span class="en">Blender Modeling</span><span class="zh">Blender 建模</span></h3>
+                            </div>
+                            <div class="skill-card-back">
+                                <h3><span class="en">Blender Modeling</span><span class="zh">Blender 建模</span></h3>
+                                <p class="en">Have interest in 3D modeling and rendering for interactive media.</p>
+                                <p class="zh">对交互式媒体的3D建模和渲染充满兴趣。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3: Tri-lingual (Dark Front) -->
+                    <div class="skill-card dark-front">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <h3><span class="en">Tri-lingual</span><span class="zh">三语能力</span></h3>
+                                <p class="en">Fluent in Chinese, English, having learnt Spanish, enabling global communication.</p>
+                                <p class="zh">精通中英双语，曾学习西班牙语，具备跨全球沟通能力。</p>
+                            </div>
+                            <div class="skill-card-back">
+                                <div class="card-placeholder"><span class="en">Tri-lingual</span><span class="zh">三语能力</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4: Writing & Corporation (Light Front) -->
+                    <div class="skill-card">
+                        <div class="skill-card-inner">
+                            <div class="skill-card-front">
+                                <img src="./static/corporation.jpg" alt="Writing & Corporation" class="skill-card-img">
+                                <h3 class="card-overlay-title"><span class="en">Writing & Corporation</span><span class="zh">写作与协作</span></h3>
+                            </div>
+                            <div class="skill-card-back">
+                                <h3><span class="en">Writing & Corporation</span><span class="zh">写作与协作</span></h3>
+                                <p class="en">Academic writing and professional collaboration in research environments.</p>
+                                <p class="zh">具备学术写作与专业团队协作能力。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h2>Cicy GUO</h2>
+                    <p class="footer-school">
+                        <span class="en">Xi'an Jiaotong Liverpool University</span>
+                        <span class="zh">西交利物浦大学</span><br>
+                        <span class="en">No. 111, Ren'ai Road, Suzhou Industrial Park</span>
+                        <span class="zh">苏州工业园区仁爱路111号</span><br>
+                        <span class="en">Suzhou, China</span>
+                        <span class="zh">中国，苏州</span>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-contact-list">
+                        <a class="footer-contact-item" onclick="toggleWeChat()">
+                            <svg viewBox="0 0 24 24"><path d="M8.348 14.65c-.21 0-.396-.078-.556-.234-.16-.156-.24-.343-.24-.563 0-.22.08-.406.24-.562.16-.156.345-.234.556-.234.21 0 .396.078.556.234.16.156.24.342.24.562 0 .22-.08.407-.24.563-.16.156-.345.234-.556.234zm3.978 0c-.21 0-.396-.078-.556-.234-.16-.156-.24-.343-.24-.563 0-.22.08-.406.24-.562.16-.156.345-.234.556-.234.21 0 .396.078.556.234.16.156.24.342.24.562 0 .22-.08.407-.24.563-.16.156-.345.234-.556.234zm5.514-5.413c-.244 0-.462-.09-.652-.27-.19-.18-.286-.4-.286-.656 0-.256.096-.476.286-.656.19-.18.408-.27.652-.27.244 0 .462.09.652.27.19.18.286.4.286.656 0 .256-.096.476-.286.656-.19.18-.408.27-.652.27zm-3.23 0c-.244 0-.462-.09-.652-.27-.19-.18-.286-.4-.286-.656 0-.256.096-.476.286-.656.19-.18.408-.27.652-.27.244 0 .462.09.652.27.19.18.286.4.286.656 0 .256-.096.476-.286.656-.19.18-.408.27-.652.27zM24 10.132c0-3.328-3.37-6.026-7.527-6.026-4.157 0-7.527 2.698-7.527 6.026 0 3.328 3.37 6.026 7.527 6.026.864 0 1.69-.117 2.454-.336l2.126 1.114-.544-1.89C22.628 13.91 24 12.164 24 10.132zm-12.78 4.795c-.328 0-.648-.027-.954-.078l-2.046 1.07.522-1.82C6.124 13.114 4.8 11.232 4.8 9.132c0-3.56 3.572-6.446 7.98-6.446 4.408 0 7.98 2.886 7.98 6.446 0 .195-.01.388-.03.578-1.02-.455-2.18-.71-3.415-.71-4.823 0-8.733 3.142-8.733 7.017 0 .31.026.613.076.908l-.458-.003z"/></svg> <span class="en">WeChat</span><span class="zh">微信</span>
+                        </a>
+                        <a href="mailto:2260721308@qq.com" class="footer-contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg> 2260721308@qq.com
+                        </a>
+                        <a href="tel:18301853782" class="footer-contact-item">
+                            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg> 18301853782
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 CICY GUO. ALL RIGHTS RESERVED.
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="toggleWeChat()"></div>
+    <div class="wechat-modal" id="wechatModal">
+        <img src="./static/wechat_qr.jpg" alt="WeChat QR Code">
+        <p class="en">Scan to connect on WeChat</p>
+        <p class="zh">扫码添加微信</p>
+    </div>
+
+    <script>
+        const nav = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            const firstLightSection = document.querySelector('.section-intro');
+            const rect = firstLightSection.getBoundingClientRect();
+
+            // 当第一个浅色章节到达顶端时，导航栏变黑
+            if (rect.top <= 80) {
+                nav.classList.add('dark-nav');
+            } else {
+                nav.classList.remove('dark-nav');
+            }
+        });
+
+        // 3D 卡片鼠标跟随效果 (Section 4)
+        const card3D = document.getElementById('card3D');
+        const section4 = document.querySelector('.section-4');
+
+        if (card3D && section4) {
+            section4.addEventListener('mousemove', (e) => {
+                const rect = section4.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateY = ((x - centerX) / centerX) * 15;
+                const rotateX = ((centerY - y) / centerY) * 15;
+                
+                card3D.style.animation = 'none';
+                card3D.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+            });
+
+            section4.addEventListener('mouseleave', () => {
+                card3D.style.animation = 'floatingCard 6s ease-in-out infinite';
+            });
+        }
+
+        // 保持视频常亮
+        const video = document.getElementById('bg-video');
+        if (video) {
+            video.style.opacity = '0.9';
+        }
+
+        function toggleWeChat() {
+            const modal = document.getElementById('wechatModal');
+            const overlay = document.getElementById('modalOverlay');
+            modal.classList.toggle('show');
+            overlay.classList.toggle('show');
+        }
+    </script>
+    
+
+</body>
+</html>
+
